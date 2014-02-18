@@ -1,0 +1,124 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html, body{
+	font-family: 'Segoe UI', Tahoma, sans-serif;
+	font-size: 12px;
+	height: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.clear{
+	clear: both;
+}
+.bold{
+	font-weight: bold;
+}
+.content{
+	border: 1px solid #AAA;
+	height: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.network-sidebar{
+	background-color: #F9F9F9;
+	float: left;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 200px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border-right: 1px solid #AAA;
+}
+.request{
+	cursor: default;
+	line-height: 14px;
+	padding: 3px 3px 3px 5px;
+}
+.network-sidebar .request:nth-child(even){
+	background-color: #EEE;
+}
+.request span{
+	cursor: pointer;
+}
+.request span:hover{
+	text-decoration: underline;
+}
+.network-sidebar .request.active{
+	background-color: #CCC;
+}
+
+.details-sidebar{
+	height: 100%;
+	padding: 0 10px 10px 10px;
+	margin-left: 210px: 200px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+
+.info-title{
+	font-weight: bold;
+}
+.info-body{
+	margin-left: 10px;
+}
+
+/*log*/
+.log-line{
+	margin-bottom: 10px;
+}
+/*table*/
+.table-title{
+	font-weight: bold;
+}
+table{
+	border-collapse: collapse;
+	margin-bottom: 10px;
+}
+table td, table th{
+	border: 1px solid #AAA;
+	padding: 2px;
+	text-align: left;
+}
+table td{
+	vertical-align: top;
+}
+
+/*tabs*/
+.tabs{
+	margin-top: 16px;
+	/*border-bottom: 1px solid #AAA;*/
+}
+.tab{
+	border-right: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-top: 1px solid transparent;
+	cursor: default;
+	display: inline-block;
+	padding: 1px 5px 1px 5px;
+	margin-left: 3px;
+	display: inline-block;
+}
+.tab.active{
+	border-right: 1px solid #AAA;
+	border-left: 1px solid #AAA;
+	border-top: 1px solid #AAA;
+}
+
+.group-start{
+	border: 1px solid #AAA;
+	padding: 10px;
+	margin-bottom: 10px;
+	display: none;
+}
+.group-start.active{
+	display: block;
+}

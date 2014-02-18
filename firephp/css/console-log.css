@@ -1,0 +1,47 @@
+.console-log{
+	font-family: Consolas, Lucida Console, monospace;
+}
+
+.console-log .object-title{
+	color: #444;
+	cursor: default;
+}
+.console-log .object-title:before{
+	display: inline-block;
+	color: #808080;
+	content: "\25BA ";
+	width: 10px;
+}
+.console-log .expanded > .object-title:before{
+	content: "\25BC ";
+}
+
+.console-log .object-content{
+	display: none;
+	margin-left: 10px;
+}
+.console-log .expanded > .object-content{
+	display: block;
+}
+
+.console-log .inline{
+	display: inline-block;
+}
+.console-log .key{
+	color: #A513AC;
+	padding-right: 5px;
+}
+.console-log .value{
+}
+.console-log .value-string{
+	color: #C41A16;
+}
+/*.console-log .value-string:before, .console-log .value-string:after{
+	content: '"';
+}*/
+.console-log .value-number{
+	color: #1C00CF;
+}
+.console-log .value-boolean{
+	font-style: italic;
+}
